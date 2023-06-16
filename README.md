@@ -1,9 +1,6 @@
 # MovieMagic 🎥
 Sexto projeto realizado pelo bootcamp @Laboratoria, o MovieChallenge, carinhosamente chamo de "MovieMagic, é uma aplicação web desenvolvida com React que permite aos usuários explorar e descobrir informações sobre filmes. Utilizando a API do OMDB, a aplicação exibe detalhes como título, ano de lançamento, diretor, elenco e sinopse.
-<div align="center">
-<img width="500" src="https://github.com/patriciadania/burger-script/assets/120285942/2960fb2a-49af-4675-a8ca-3a47ab20a913"/>
 
-</div>
 
 <div align="center">
   
