@@ -1,0 +1,21 @@
+.cast-item {
+    text-align: center;
+  }
+  
+  .cast-item h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .cast-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .cast-item img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
