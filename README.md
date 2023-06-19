@@ -22,9 +22,6 @@ Sexto projeto realizado pelo bootcamp @Laboratoria, o MovieChallenge, carinhosam
   [Linkedin](https://www.linkedin.com/in/patriciadania/) | [Github](https://github.com/patriciadania)
   <br>
   <br>
-
- 
-  
 </div>
  
 ***
@@ -60,17 +57,19 @@ O Movie Magic é uma aplicação web que permite aos usuários pesquisar filmes 
  ## 4. Protótipos
  <div align="center">
   <img width="500" src="https://github.com/patriciadania/MovieChallenge/assets/120285942/a5bc0aac-8694-415c-ab50-e21e8a92f35d"/><br>
-    Tela : Para Desktop.
+    Tela : Para Desktop.  
+     <br>
 </div>
 <div align="center">
   <img width="500" src="https://github.com/patriciadania/MovieChallenge/assets/120285942/22a5b420-2fc7-452e-83fd-be7ef1b1d8fb"/><br>
-    Tela : Para Desktop (Overview).
+    Tela : Para Desktop (Overview).  
+    <br>
 </div>
  <div align="center">
   <img width="300" src="https://github.com/patriciadania/MovieChallenge/assets/120285942/e315bffd-fe7c-4f7e-afbf-d776fcca8278"/><br>
-    Tela : Para Celular e Tablet.
+    Tela : Para Celular e Tablet.  
+     <br>
 </div>
-
 
   ***
  ## 5. Considerações Técnicas
