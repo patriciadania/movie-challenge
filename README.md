@@ -32,10 +32,60 @@ Sexto projeto realizado pelo bootcamp @Laboratoria, o MovieChallenge, carinhosam
 
 * [1. Definição de Produto](#1-definição-de-produto) 
 * [2. Histórias de Usuários](#2-histórias-de-usuários) 
-* [3. Funcionalidades](#3-funcionalidades) 
-* [4. Considerações Técnicas](#4-considerações-técnicas) 
-* [5. Mock da API](#5-mock-da-api)
-* [6. Testes Unitários](#6-testes-unitários) 
-* [7. Testes de Usabilidade e Feedback dos Usuários](#7-testes-de-usabilidade-e-feedback-dos-usuários) 
+* [3. Funcionalidades](#3-funcionalidades)
+* [4. Protótipos](#4-protótipos)
+* [5. Considerações Técnicas](5-considerações-técnicas) 
+* [6. Testes de Usabilidade](#6-testes-de-usabilidade) 
+* [7. Testes Jest](#7-testes-jest) 
 
 ***
+## 1. Definição de Produto 
+O Movie Magic é uma aplicação web que permite aos usuários pesquisar filmes por gênero e por nome. Com base na API OMDB,ele oferece uma experiência interativa e personalizada para descobrir e explorar filmes.
+***
+## 2. Histórias de Usuários 
+- Como usuário, quero poder pesquisar filmes por gênero para encontrar filmes que se encaixem nos meus interesses.
+- Como usuário, quero poder pesquisar filmes pelo nome para encontrar filmes específicos que eu esteja procurando.
+- Como usuário, quero visualizar os detalhes de um filme, incluindo pontuação e overview.
+- Como usuário, quero ter uma experiência responsiva e adaptada a diferentes dispositivos, como desktops, tablets e celulares.
+- Como usuário, quero que a aplicação seja fácil de usar e tenha uma interface intuitiva.
+ ***
+ ## 3. Funcionalidades
+- Pesquisa de filmes por gênero: Os usuários podem selecionar um gênero na lista fornecida e obter uma lista de filmes correspondentes.
+- Pesquisa de filmes por nome: Os usuários podem inserir o nome de um filme na barra de pesquisa e obter resultados correspondentes.
+- Detalhes do filme: Os usuários podem clicar em um filme da lista de resultados para ver informações detalhadas de um filme, incluindo pontuação e overview.
+- Responsividade: A aplicação é responsiva e se adapta a diferentes dispositivos, garantindo uma experiência consistente em desktops, tablets e celulares.
+- Interface intuitiva: A interface da aplicação é projetada para ser fácil de usar, proporcionando uma experiência agradável aos usuários.
+ ***
+
+ ## 4. Protótipos
+ <div align="center">
+  <img width="500" src="https://github.com/patriciadania/MovieChallenge/assets/120285942/a5bc0aac-8694-415c-ab50-e21e8a92f35d"/><br>
+    Tela : Para Desktop.
+</div>
+<div align="center">
+  <img width="500" src="https://github.com/patriciadania/MovieChallenge/assets/120285942/22a5b420-2fc7-452e-83fd-be7ef1b1d8fb"/><br>
+    Tela : Para Desktop (Overview).
+</div>
+ <div align="center">
+  <img width="300" src="https://github.com/patriciadania/MovieChallenge/assets/120285942/e315bffd-fe7c-4f7e-afbf-d776fcca8278"/><br>
+    Tela : Para Celular e Tablet.
+</div>
+
+
+  ***
+ ## 5. Considerações Técnicas
+- A aplicação será desenvolvida utilizando React, seguindo os princípios de desenvolvimento orientado a objetos e modularidade.
+- Será utilizada a API OMDB para obter os dados dos filmes, utilizando a função Fetch para realizar as requisições.
+- A aplicação será estruturada em componentes reutilizáveis para facilitar a manutenção e o desenvolvimento futuro.
+- Serão aplicados testes unitários utilizando a biblioteca Jest para garantir a qualidade e a robustez do código.
+   ***
+## 6. Testes de Usabilidade
+- Serão realizados testes de usabilidade durante o desenvolvimento da aplicação, envolvendo usuários reais para coletar feedback e identificar áreas de melhoria.
+- Os testes de usabilidade ajudarão a avaliar a facilidade de uso da aplicação, a identificar possíveis problemas de navegação e a garantir uma experiência intuitiva para os usuários.
+- As informações coletadas nos testes de usabilidade serão utilizadas para iterar e aprimorar a aplicação, tornando-a mais amigável e eficiente.
+ ***
+  ## 7. Testes Jest
+- Serão desenvolvidos testes unitários utilizando a biblioteca Jest para verificar o correto funcionamento das funções e componentes da aplicação.
+- Os testes Jest garantirão que as funcionalidades estejam corretas, que os componentes sejam renderizados adequadamente e que os dados sejam manipulados de forma correta.
+- Os testes Jest fornecerão uma cobertura abrangente do código, ajudando a identificar e corrigir quaisquer problemas ou erros.
+ ***
