@@ -142,6 +142,7 @@ nav ul li a:focus::before{
 .movie-details:hover .overview{
     transform: translateY(0%);
 }
+
 .rating{
     background-color: var(--primary-color);
     width: 35px;
@@ -157,6 +158,12 @@ nav ul li a:focus::before{
     right: 5px;
     bottom: 5px;
 }
+.movie-details .release-date {
+    font-size: 14px;
+    color: white;
+    margin-top: 0px;
+  }
+  
 @media (max-width:900px){
     .header{
         background-color: var(--secondary-color);
