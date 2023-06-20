@@ -1,5 +1,5 @@
 # MovieMagic 🎥
-Sexto projeto realizado pelo bootcamp @Laboratoria, o MovieChallenge, carinhosamente chamado de "MovieMagic", é uma aplicação web desenvolvida com React que permite aos usuários explorar e descobrir informações sobre filmes. Utilizando a API do TMDb, a aplicação exibe detalhes como título, ano de lançamento, diretor, elenco e sinopse.
+Sexto projeto realizado pelo bootcamp @Laboratoria, o MovieChallenge, carinhosamente chamado de "MovieMagic", é uma aplicação web desenvolvida com React que permite aos usuários explorar e descobrir informações sobre filmes. Utilizando a API do TMDb, a aplicação exibe detalhes como título, pontuação e visão geral.
 
 
 <div align="center">
@@ -56,18 +56,19 @@ O Movie Magic é uma aplicação web que permite aos usuários pesquisar filmes 
 
  ## 4. Protótipos
  <div align="center">
-  <img width="500" src="https://github.com/patriciadania/MovieChallenge/assets/120285942/a5bc0aac-8694-415c-ab50-e21e8a92f35d"/><br>
+  <img width="500" src="https://github.com/patriciadania/MovieChallenge/assets/120285942/72763f3a-59f2-45a6-ad97-5216dad449b8"/><br>
     Tela : Para Desktop.  
      <br>
 </div>
 <div align="center">
-  <img width="500" src="https://github.com/patriciadania/MovieChallenge/assets/120285942/22a5b420-2fc7-452e-83fd-be7ef1b1d8fb"/><br>
+  <img width="500" src="https://github.com/patriciadania/MovieChallenge/assets/120285942/11c8f425-b447-4765-83e6-c41924252e4f"/><br>
     Tela : Para Desktop (Overview).  
     <br>
 </div>
  <div align="center">
-  <img width="300" src="https://github.com/patriciadania/MovieChallenge/assets/120285942/e315bffd-fe7c-4f7e-afbf-d776fcca8278"/><br>
+  <img width="300" src="https://github.com/patriciadania/MovieChallenge/assets/120285942/ff89ba71-419e-4e1a-9a56-56ff27ddd05e"/><br>
     Tela : Para Celular e Tablet.  
+
      <br>
 </div>
 
