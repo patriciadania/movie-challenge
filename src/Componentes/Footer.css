@@ -1,4 +1,3 @@
-/* Footer.css */
 
 .footer {
     background-color: var(--secondary-color);
@@ -36,4 +35,16 @@
   .footer-menu-item a:hover {
     text-decoration: underline;
   }
+  .back-to-top-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px; /* Aumente ou diminua a margem para ajustar o espaçamento */
+  }
   
+  .back-to-top-button i {
+    margin-right: 6px;
+  }
