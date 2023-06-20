@@ -1,0 +1,39 @@
+/* Footer.css */
+
+.footer {
+    background-color: var(--secondary-color);
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-menu-item {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .footer-menu-item p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .footer-menu-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-menu-item a:hover {
+    text-decoration: underline;
+  }
+  

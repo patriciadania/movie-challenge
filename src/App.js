@@ -1,21 +1,21 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import './Componentes/style.css';
 import { useState, useEffect } from "react";
-import Card from "./Componentes/Card";
 import Logo from "./Imagens/Logo.png";
 import getData from "./Componentes/GetData";
 import { searchMovie } from "./Componentes/SearchMovie";
 import { API_key, base_url } from "./Componentes/ConfigApi";
+import Card from "./Componentes/Card";
+import Footer from "./Componentes/Footer";
 
-const arr = ["Popular", "Ação", "Crianças", "Drama", "Comédia"];
-
+const arr = ["Todos", "Ação", "Crianças", "Drama", "Comédia"];
 
 function App() {
-  
   const [movieData, setMovieData] = useState([]);
   const [url, setUrl] = useState(`${base_url}/discover/movie?sort_by=popularity.desc${API_key}`);
   const [search, setSearch] = useState("");
+  const [isSearching, setIsSearching] = useState(false);
+  const [remainingMovies, setRemainingMovies] = useState([]);
 
   useEffect(() => {
     fetch(url)
@@ -24,6 +24,26 @@ function App() {
         setMovieData(data.results);
       });
   }, [url]);
+
+  useEffect(() => {
+    if (movieData.length > 0) {
+      setRemainingMovies([...movieData]);
+    }
+  }, [movieData]);
+
+  const getRandomMovie = () => {
+    if (remainingMovies.length === 0) return null;
+
+    const randomIndex = Math.floor(Math.random() * remainingMovies.length);
+    const randomMovie = remainingMovies.splice(randomIndex, 1)[0];
+    return randomMovie;
+  };
+
+  const handleGetData = (movieType) => {
+    getData(movieType, setUrl, setMovieData);
+    setIsSearching(false);
+    setSearch("");
+  };
 
   return (
     <>
@@ -39,7 +59,8 @@ function App() {
                   href="#Home"
                   name={value}
                   onClick={(e) => {
-                    getData(e.target.name,setUrl);
+                    e.preventDefault();
+                    handleGetData(e.target.name);
                   }}
                 >
                   {value}
@@ -54,12 +75,12 @@ function App() {
               type="text"
               placeholder="Procurar por nome"
               className="inputText"
-              onChange={(e) => {
-                setSearch(e.target.value);
-              }}
+              onChange={(e) => setSearch(e.target.value)}
+              onKeyDown={(e) =>
+                searchMovie(e, setUrl, setSearch, setMovieData, setIsSearching)
+              }
               value={search}
-              onKeyPress={(e) => searchMovie(e, setUrl, setSearch, search)}
-              />
+            />
             <button>
               <i className="fas fa-search"></i>
             </button>
@@ -67,17 +88,22 @@ function App() {
         </form>
       </div>
       <div className="container">
-        {movieData.length === 0 ? (
-          <p className="notfound">Não Encontrado</p>
+        {isSearching ? (
+          movieData.length === 0 ? (
+            <p className="notfound"></p>
+          ) : (
+            movieData.map((res, pos) => <Card info={res} key={pos} />)
+          )
         ) : (
-          movieData.map((res, pos) => (
-            <Card info={res} key={pos} />
-          ))
+          Array.from({ length: 10 }, (_, index) => {
+            const randomMovie = getRandomMovie();
+            return randomMovie ? <Card info={randomMovie} key={index} /> : null;
+          })
         )}
       </div>
+      <Footer />
     </>
   );
-};
+}
 
 export default App;
-
