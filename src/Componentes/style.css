@@ -124,6 +124,7 @@ nav ul li a:focus::before{
     width: 160px;
     font-size: 15px;
     text-align: center;
+    font-weight: bold;
 }
 .movie-details .overview{
     position: absolute;
@@ -138,10 +139,26 @@ nav ul li a:focus::before{
     transition: all 0.4s ease-in-out;
     overflow-y: auto;
     transform: translateY(101%);
+    font-weight: bold;
+    
+    
 }
 .movie-details:hover .overview{
-    transform: translateY(0%);
+    transform: translateY(0%);  
 }
+.movie-details .overview::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .movie-details .overview::-webkit-scrollbar-track {
+    background-color: var(--secondary-color);
+  }
+  
+  .movie-details .overview::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+  }
+  
 
 .rating{
     background-color: var(--primary-color);
@@ -165,22 +182,34 @@ nav ul li a:focus::before{
   }
   
 @media (max-width:900px){
-    .header{
-        background-color: var(--secondary-color);
-        height: 200px;
-    }
-    nav ul{
-        display: flex;
+    .header {
+        height: 150px;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      nav ul {
+        flex-direction: row;
+        margin-top: 10px;
+      }
+    
+      nav ul li {
+        margin-right: 0;
+      }
+    
+      .search-btn {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 10px;
+      }
+      
+      .logo img {
+        width: 150px;
+      }
     }
-    nav ul li{
-        padding-top: 10px;
-    }
-    .search-btn{
-        width: 200px;
-        margin-right: 100px;
-    }
-}
+    
+
 .notfound{
     font-size: 40px;
     font-weight: bold;
@@ -195,4 +224,31 @@ nav ul li a:focus::before{
     width: 200px;
     margin-right: 10px;
   }
- 
+  @media (max-width: 650px) {
+    .header {
+      height: 150px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    nav ul {
+      flex-direction: row;
+      margin-top: 10px;
+    }
+  
+    nav ul li {
+      margin-right: 0;
+    }
+  
+    .search-btn {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 10px;
+    }
+    
+    .logo img {
+      width: 150px;
+    }
+  }
+  
