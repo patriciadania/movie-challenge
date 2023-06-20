@@ -69,7 +69,6 @@ O Movie Magic é uma aplicação web que permite aos usuários pesquisar filmes 
   <img width="300" src="https://github.com/patriciadania/MovieChallenge/assets/120285942/ff89ba71-419e-4e1a-9a56-56ff27ddd05e"/><br>
     Tela : Para Celular e Tablet.  
 
-     <br>
 </div>
 
   ***
