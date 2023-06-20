@@ -8,7 +8,7 @@ import getData from "./Componentes/GetData";
 import { searchMovie } from "./Componentes/SearchMovie";
 import { API_key, base_url } from "./Componentes/ConfigApi";
 
-const arr = ["Popular", "Teatro", "Crianças", "Drama", "Comédia"];
+const arr = ["Popular", "Ação", "Crianças", "Drama", "Comédia"];
 
 
 function App() {
@@ -58,8 +58,8 @@ function App() {
                 setSearch(e.target.value);
               }}
               value={search}
-              onKeyPress={searchMovie}
-            />
+              onKeyPress={(e) => searchMovie(e, setUrl, setSearch, search)}
+              />
             <button>
               <i className="fas fa-search"></i>
             </button>
