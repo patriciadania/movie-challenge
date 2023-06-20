@@ -160,7 +160,7 @@ nav ul li a:focus::before{
 @media (max-width:900px){
     .header{
         background-color: var(--secondary-color);
-        height: 180px;
+        height: 200px;
     }
     nav ul{
         display: flex;
@@ -188,3 +188,4 @@ nav ul li a:focus::before{
     width: 200px;
     margin-right: 10px;
   }
+ 
