@@ -10,7 +10,7 @@ const Card = (movie) => {
                 <div className="movie-details">
                     <div className="box">
                         <h4 className="title">{movie.info.title}</h4>
-                        <p className="rating">{movie.info.vote_average}</p>
+                        <p className="rating">{movie.info.vote_average.toFixed(1)}</p>
                     </div>
                     <div className="overview">
                     <p >
