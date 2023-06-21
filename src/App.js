@@ -45,6 +45,13 @@ function App() {
     setSearch("");
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      searchMovie(e, setUrl, setSearch, setMovieData, setIsSearching);
+    }
+  };
+
   return (
     <>
       <div className="header">
@@ -76,9 +83,7 @@ function App() {
               placeholder="Procurar por nome"
               className="inputText"
               onChange={(e) => setSearch(e.target.value)}
-              onKeyDown={(e) =>
-                searchMovie(e, setUrl, setSearch, setMovieData, setIsSearching)
-              }
+              onKeyDown={handleKeyDown}
               value={search}
             />
             <button>
