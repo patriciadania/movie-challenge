@@ -1,4 +1,4 @@
-// searchMovie.js
+
 import { base_url } from "./ConfigApi";
 
 export const searchMovie = async (evt, setUrl, setSearch, setMovieData, setIsSearching) => {

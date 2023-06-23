@@ -1,14 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Componentes/style.css';
-import { useState, useEffect } from "react";
 import Logo from "./Imagens/Logo.png";
 import getData from "./Componentes/GetData";
-import { searchMovie } from "./Componentes/SearchMovie";
 import { API_key, base_url } from "./Componentes/ConfigApi";
 import Card from "./Componentes/Card";
 import Footer from "./Componentes/Footer";
+import { searchMovie } from "./Componentes/SearchMovie";
 
-const arr = ["Todos", "Ação", "Crianças", "Drama", "Comédia"];
+const genres = ["Todos", "Animação", "Ficção Científica", "Drama", "Comédia"];
 
 function App() {
   const [movieData, setMovieData] = useState([]);
@@ -22,6 +21,9 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         setMovieData(data.results);
+      })
+      .catch((error) => {
+        console.error('Erro ao obter lista de filmes:', error);
       });
   }, [url]);
 
@@ -60,17 +62,17 @@ function App() {
         </div>
         <nav>
           <ul>
-            {arr.map((value, pos) => (
-              <li key={pos}>
+            {genres.map((genre, index) => (
+              <li key={index}>
                 <a
                   href="#Home"
-                  name={value}
+                  name={genre}
                   onClick={(e) => {
                     e.preventDefault();
                     handleGetData(e.target.name);
                   }}
                 >
-                  {value}
+                  {genre}
                 </a>
               </li>
             ))}
@@ -95,14 +97,14 @@ function App() {
       <div className="container">
         {isSearching ? (
           movieData.length === 0 ? (
-            <p className="notfound"></p>
+            <p className="notfound">Nenhum filme encontrado.</p>
           ) : (
-            movieData.map((res, pos) => <Card info={res} key={pos} />)
+            movieData.map((movie, index) => <Card movie={movie} key={index} />)
           )
         ) : (
           Array.from({ length: 10 }, (_, index) => {
             const randomMovie = getRandomMovie();
-            return randomMovie ? <Card info={randomMovie} key={index} /> : null;
+            return randomMovie ? <Card movie={randomMovie} key={index} /> : null;
           })
         )}
       </div>
