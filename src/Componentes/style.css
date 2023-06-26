@@ -177,7 +177,7 @@ nav ul li a:focus::before{
 }
 .movie-details .release-date {
     font-size: 14px;
-    color: white;
+    color: black;
     margin-top: 0px;
   }
   
