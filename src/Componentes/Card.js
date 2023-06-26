@@ -14,7 +14,7 @@ const Card = ({ info }) => {
         <div className="overview">
           <p className="release-date">Data de Lançamento: {info.release_date}</p>
           <h1>Visão Geral</h1>
-          <p>{info.overview}.&language=pt-BR</p>
+          <p>{info.overview}</p>
         </div>
       </div>
     </div>
